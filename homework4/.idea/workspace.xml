@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cef20cf-1908-4ea1-a12f-bf34b83f5068" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../homework2/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../homework2/.idea/vcs.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8cef20cf-1908-4ea1-a12f-bf34b83f5068" name="Changes" comment="homework 4 JavaFX" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +33,7 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/JavaProjects/java_homework/homework4/ex2",
+    "last_opened_file_path": "D:/JavaProjects/java_homework/homework4/ex1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -62,10 +60,32 @@
       <updated>1742799574235</updated>
       <workItem from="1742799575325" duration="1376000" />
       <workItem from="1742800966738" duration="26000" />
+      <workItem from="1742986818569" duration="249000" />
     </task>
+    <task id="LOCAL-00001" summary="homework 4 JavaFX">
+      <option name="closed" value="true" />
+      <created>1742986914945</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742986914945</updated>
+    </task>
+    <task id="LOCAL-00002" summary="homework 4 JavaFX">
+      <option name="closed" value="true" />
+      <created>1742987047612</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1742987047612</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="homework 4 JavaFX" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework 4 JavaFX" />
   </component>
 </project>
