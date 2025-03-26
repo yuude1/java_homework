@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ex5.FlagController">
+    <children>
+        <!-- Первая полоса -->
+        <Label layoutX="20" layoutY="20" text="Верхняя полоса:" />
+        <ToggleGroup fx:id="topColorGroup" />
+        <RadioButton layoutX="20" layoutY="40" text="Красный" toggleGroup="{topColorGroup}" fx:id="topRed" />
+        <RadioButton layoutX="20" layoutY="60" text="Синий" toggleGroup="{topColorGroup}" fx:id="topBlue" />
+        <RadioButton layoutX="20" layoutY="80" text="Желтый" toggleGroup="{topColorGroup}" fx:id="topYellow" />
+
+        <!-- Вторая полоса -->
+        <Label layoutX="150" layoutY="20" text="Средняя полоса:" />
+        <ToggleGroup fx:id="middleColorGroup" />
+        <RadioButton layoutX="150" layoutY="40" text="Зеленый" toggleGroup="{middleColorGroup}" fx:id="middleGreen" />
+        <RadioButton layoutX="150" layoutY="60" text="Черный" toggleGroup="{middleColorGroup}" fx:id="middleBlack" />
+        <RadioButton layoutX="150" layoutY="80" text="Белый" toggleGroup="{middleColorGroup}" fx:id="middleWhite" />
+
+        <!-- Третья полоса -->
+        <Label layoutX="280" layoutY="20" text="Нижняя полоса:" />
+        <ToggleGroup fx:id="bottomColorGroup" />
+        <RadioButton layoutX="280" layoutY="40" text="Оранжевый" toggleGroup="{bottomColorGroup}" fx:id="bottomOrange" />
+        <RadioButton layoutX="280" layoutY="60" text="Фиолетовый" toggleGroup="{bottomColorGroup}" fx:id="bottomPurple" />
+        <RadioButton layoutX="280" layoutY="80" text="Серый" toggleGroup="{bottomColorGroup}" fx:id="bottomGray" />
+
+        <!-- Кнопка нарисовать -->
+        <Button layoutX="150" layoutY="130" text="Нарисовать" fx:id="drawButton" onAction="#handleDraw" />
+
+        <!-- Текстовый вывод -->
+        <Label layoutX="50" layoutY="180" fx:id="resultLabel" text="Выбранные цвета: " />
+    </children>
+</AnchorPane>

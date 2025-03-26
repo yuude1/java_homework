@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ex4.CalculatorController">
+    <children>
+        <TextField fx:id="display" layoutX="20" layoutY="20" prefWidth="260" editable="false" />
+        <GridPane layoutX="20" layoutY="60" hgap="10" vgap="10">
+            <columnConstraints>
+                <ColumnConstraints halignment="CENTER"/>
+                <ColumnConstraints halignment="CENTER"/>
+                <ColumnConstraints halignment="CENTER"/>
+                <ColumnConstraints halignment="CENTER"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints valignment="CENTER"/>
+                <RowConstraints valignment="CENTER"/>
+                <RowConstraints valignment="CENTER"/>
+                <RowConstraints valignment="CENTER"/>
+            </rowConstraints>
+
+            <!-- Числовые кнопки -->
+            <Button text="7" onAction="#handleNumber" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <Button text="8" onAction="#handleNumber" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+            <Button text="9" onAction="#handleNumber" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+            <Button text="/" onAction="#handleOperator" GridPane.columnIndex="3" GridPane.rowIndex="0"/>
+
+            <Button text="4" onAction="#handleNumber" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <Button text="5" onAction="#handleNumber" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+            <Button text="6" onAction="#handleNumber" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+            <Button text="*" onAction="#handleOperator" GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+
+            <Button text="1" onAction="#handleNumber" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            <Button text="2" onAction="#handleNumber" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+            <Button text="3" onAction="#handleNumber" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+            <Button text="-" onAction="#handleOperator" GridPane.columnIndex="3" GridPane.rowIndex="2"/>
+
+            <Button text="0" onAction="#handleNumber" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+            <Button text="." onAction="#handleNumber" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+            <Button text="=" onAction="#handleEquals" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+            <Button text="+" onAction="#handleOperator" GridPane.columnIndex="3" GridPane.rowIndex="3"/>
+        </GridPane>
+
+        <Button text="C" layoutX="200" layoutY="260" onAction="#handleClear"/>
+    </children>
+</AnchorPane>

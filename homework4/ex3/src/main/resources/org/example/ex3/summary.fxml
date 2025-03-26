@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ex3.SummaryController">
+    <children>
+        <Label layoutX="50.0" layoutY="30.0" text="Your Order:">
+         <font>
+            <Font name="Consolas Bold Italic" size="20.0" />
+         </font></Label>
+        <TextArea fx:id="orderDetails" editable="false" layoutX="50.0" layoutY="60.0" prefHeight="150.0" prefWidth="300.0">
+         <font>
+            <Font name="Consolas Bold Italic" size="18.0" />
+         </font></TextArea>
+        <Label fx:id="totalPriceLabel" layoutX="50.0" layoutY="220.0" text="Total: $0.0">
+         <font>
+            <Font name="Consolas Bold Italic" size="28.0" />
+         </font></Label>
+    </children>
+</AnchorPane>
