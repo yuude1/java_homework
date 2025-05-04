@@ -127,7 +127,7 @@ public class Exercises {
     }
 
     public static void getSortBooks() {
-        String query = "SELECT * FROM books ORDER BY year";
+        String query = "SELECT * FROM books ORDER BY publishingYear";
         try (Connection conn = DatabaseManager.connect();
              Statement stmt = conn.createStatement();
              ResultSet rs = stmt.executeQuery(query)) {
@@ -148,7 +148,7 @@ public class Exercises {
     }
 
     public static void getFilteredBooks() {
-        String query = "SELECT * FROM books WHERE year < 2000";
+        String query = "SELECT * FROM books WHERE publishingYear > 2000";
         try (Connection conn = DatabaseManager.connect();
              Statement stmt = conn.createStatement();
              ResultSet rs = stmt.executeQuery(query)) {
@@ -167,4 +167,74 @@ public class Exercises {
             e.printStackTrace();
         }
     }
+
+    public static void insertVisitorAndBooks() {
+        String insertVisitor = "INSERT INTO visitors (name, surname, phone, subscribed) VALUES (?, ?, ?, ?)";
+        String insertBook = "INSERT INTO books (name, author, publishingYear, isbn, publisher) VALUES (?, ?, ?, ?, ?)";
+
+        try (Connection conn = DatabaseManager.connect();
+             PreparedStatement psVisitor = conn.prepareStatement(insertVisitor);
+             PreparedStatement psBook = conn.prepareStatement(insertBook)) {
+
+            psVisitor.setString(1, "Давид");
+            psVisitor.setString(2, "Барданов");
+            psVisitor.setString(3, "+79999999999");
+            psVisitor.setBoolean(4, true);
+            psVisitor.executeUpdate();
+
+            psBook.setString(1, "Метро 2033");
+            psBook.setString(2, "Дмитрий Глуховский");
+            psBook.setInt(3, 2005);
+            psBook.setString(4, "30495389");
+            psBook.setString(5, "Эксмо");
+            psBook.executeUpdate();
+
+            psBook.setString(1, "Прикления Тома Сойера");
+            psBook.setString(2, "Марк Твен");
+            psBook.setInt(3, 1876);
+            psBook.setString(4, "34907643");
+            psBook.setString(5, "Марк Твен");
+            psBook.executeUpdate();
+
+            System.out.println("Информация добавлена.");
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+    public static void getAllVisitors() {
+        String query = "SELECT * FROM visitors";
+        try (Connection conn = DatabaseManager.connect();
+             Statement stmt = conn.createStatement();
+             ResultSet rs = stmt.executeQuery(query)) {
+
+            while (rs.next()) {
+                int id = rs.getInt("id");
+                String name = rs.getString("name");
+                String surname = rs.getString("surname");
+                String phone = rs.getString("phone");
+                String subscribed = rs.getString("subscribed");
+
+                System.out.println(id + " | " + name + " | " + surname + " | " + phone + " | " + subscribed);
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+    public static void dropBookTables() {
+        String dropBooks = "DROP TABLE IF EXISTS books";
+        String dropVisitors = "DROP TABLE IF EXISTS visitors";
+
+        try (Connection conn = DatabaseManager.connect();
+             Statement stmt = conn.createStatement()) {
+            stmt.execute(dropBooks);
+            stmt.execute(dropVisitors);
+            System.out.println("Таблицы удалены.");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+
 }

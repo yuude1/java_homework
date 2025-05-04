@@ -25,7 +25,13 @@ public class Main {
         getAllBooks();
         System.out.println("Получение всех книг сортированных по году:");
         getSortBooks();
-        System.out.println("Получение всех книг фильтрованных по году > 2000:");
+        System.out.println("Получение всех книг фильтрованных по году < 2000:");
         getFilteredBooks();
+//        insertVisitorAndBooks();
+        System.out.println("Получение всех книг и посетителей:");
+        getAllBooks();
+        getAllVisitors();
+        System.out.println("Удаление таблиц...");
+        dropBookTables();
     }
 }
