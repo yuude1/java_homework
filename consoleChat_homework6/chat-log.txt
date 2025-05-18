@@ -1,0 +1,88 @@
+2025-05-18 21:05:51 INFO  org.example.Server - Server started on port 8080
+2025-05-18 21:06:03 INFO  org.example.ClientHandler - User connected: user1
+2025-05-18 21:06:06 INFO  org.example.ClientHandler - [BROADCAST] user1: 
+2025-05-18 21:06:29 INFO  org.example.ClientHandler - [BROADCAST] user1: 
+2025-05-18 21:06:31 INFO  org.example.ClientHandler - [BROADCAST] user1: avdsfds
+2025-05-18 21:06:37 INFO  org.example.ClientHandler - [BROADCAST] user1: yuude
+2025-05-18 21:06:50 INFO  org.example.ClientHandler - [BROADCAST] user1: 
+2025-05-18 21:06:50 INFO  org.example.ClientHandler - [BROADCAST] user1: 
+2025-05-18 21:06:50 INFO  org.example.ClientHandler - [BROADCAST] user1: 
+2025-05-18 21:06:51 INFO  org.example.ClientHandler - [BROADCAST] user1: 
+2025-05-18 21:06:51 INFO  org.example.ClientHandler - [BROADCAST] user1: 
+2025-05-18 21:06:51 INFO  org.example.ClientHandler - [BROADCAST] user1: 
+2025-05-18 21:06:55 WARN  org.example.ClientHandler - Connection error with user1
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:188)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at org.example.ClientHandler.run(ClientHandler.java:52)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-05-18 21:06:55 INFO  org.example.ClientHandler - User disconnected: user1
+2025-05-18 21:07:00 INFO  org.example.ClientHandler - User connected: useer1
+2025-05-18 21:07:13 WARN  org.example.ClientHandler - Connection error with useer1
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:188)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at org.example.ClientHandler.run(ClientHandler.java:52)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-05-18 21:07:13 INFO  org.example.ClientHandler - User disconnected: useer1
+2025-05-18 21:07:23 INFO  org.example.Server - Server started on port 8080
+2025-05-18 21:07:39 INFO  org.example.ClientHandler - User connected: yuude
+2025-05-18 21:07:50 INFO  org.example.ClientHandler - [BROADCAST] yuude: Hello
+2025-05-18 21:08:01 INFO  org.example.ClientHandler - [BROADCAST] yuude: How are you
+2025-05-18 21:13:50 WARN  org.example.ClientHandler - Connection error with yuude
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:188)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at org.example.ClientHandler.run(ClientHandler.java:52)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-05-18 21:13:50 INFO  org.example.ClientHandler - User disconnected: yuude
+2025-05-18 21:13:53 WARN  org.example.ClientHandler - Connection error with null
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:188)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at org.example.ClientHandler.run(ClientHandler.java:39)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
